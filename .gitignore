@@ -1,3 +1,5 @@
+scripts/one-off/ #don't need to track one-off scripts
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
