@@ -1,0 +1,6 @@
+model_name: af3
+num_seeds: null           # How many random seeds to generate per structure
+dialect: alphafold3      # AF3 requires this dialect string
+version: 3               # AF3 JSON schema version
+cif_folder: mmcif_glycoprotein_subset_of_pdb
+job_types: null        # Types of jobs to generate, e.g. ["w_glycans", "wo_glycans", "large_glycans"]

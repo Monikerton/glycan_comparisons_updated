@@ -1,0 +1,21 @@
+# run settings for af3_webserver model -- only run on structures supported by af3 webserver
+
+model_name: af3_webserver
+structure_folder: mmcif_glycoprotein_subset_of_pdb
+distance_threshold: 5
+
+max_residues: null
+allowed_multimers: true
+
+unsupported_ccd_codes:
+  - MAN9
+
+max_glycan_residues: 8
+
+supported_glycans:
+  - BGC
+  - BMA
+  - GLC
+  - MAN
+  - NAG
+  - FCA

@@ -1,0 +1,14 @@
+model_name: "manifest" #default manifest, no model name needed
+structure_folder: output/processed/glycoshape_pdbs_validated # file path to find the structure folder (most likely under raw_data or processed).
+dataset_name: glycoshape_pdbs_validated
+file_type: pdb  # Type of files to process, e.g., "cif" or "pdb"
+structure_type: glycan # Type of structures to process, e.g., "glycoprotein" or "glycan"
+
+distance_threshold: 5 #Distance threshold in Angstroms for chain-glycan interactions.
+
+max_residues: null
+allowed_multimers: true
+
+unsupported_ccd_codes:
+max_glycan_residues:
+supported_glycans: # if there is a restriction on supported glycans, it should be a list of glycan codes

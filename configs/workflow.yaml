@@ -1,0 +1,18 @@
+databases:
+  glycoshape:
+    module: ingest.glycoshape
+    params:
+      # ZIP / extraction inputs
+      raw_zip: raw_data/glycoshape/GlycoShape.zip
+      raw_extract_tmp: raw_data/glycoshape/gs_extracted_from_website
+      source_dir: raw_data/glycoshape/gs_extracted_from_website_unzipped
+
+      # Parsed‐output directories (both use the same folder)
+      glycam_to_pdb_path: output/ingest/glycoshape/organized_with_residue_pdb_ids
+      glycosylator_pdb_path: output/ingest/glycoshape/glycoshape_pdbs
+
+      # Final aggregated pickle
+      glycosylator_objects_path: output/ingest/glycoshape/glycoshape_objects.pkl
+workflows:
+  glycoshape:
+    - ingest.glycoshape

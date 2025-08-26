@@ -1,0 +1,12 @@
+group_name: Glycoshape vs AlphaFold Glycoshape
+pred_file: output/metrics/glycans/alphafold_webserver_glycoshape_coordinates.pqt
+cryst_file: output/metrics/glycans/glycoshape_validated_coordinates.pqt
+label_1: AF
+label_2: GS
+outdir: output/metrics/glycans/results/glycoshape_vs_alphafold
+cutoff: 15.0
+key_cols: ["Resname", "Resid", "Atom Name"]
+xyz: ["X", "Y", "Z"]
+subgroup_cols: ["GSID", "Configuration"]
+show_progress: true
+also_diversity: true
